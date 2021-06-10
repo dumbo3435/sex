@@ -3,7 +3,6 @@ if syn then
 end
 
 local player = game:GetService("Players").LocalPlayer
-local CodeEvent = game:GetService("ReplicatedStorage").Events.RedeemCode
 _G.firstid = game.PlaceId
 
 if _G.firstid ~= 6901029464 then do
@@ -26,14 +25,14 @@ if not syn then do
     end
 end
 
+if _G.firstid == 6901029464 then do
+local CodeEvent = game:GetService("ReplicatedStorage").Events.RedeemCode
 wait(2)
 CodeEvent:FireServer("BoardWalk")
 CodeEvent:FireServer("ThingsGoBoom")
 CodeEvent:FireServer("ParticleWizard")
 CodeEvent:FireServer("FXArtist")
 wait(4)
-
-if _G.firstid == 6901029464 then do
 game:Shutdown()
 end
 end
