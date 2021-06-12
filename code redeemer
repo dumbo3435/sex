@@ -12,10 +12,10 @@ else
    firstid = game.PlaceId
 end
 
-local player = game:GetService("Players").LocalPlayer
-local CodeEvent = game:GetService("ReplicatedStorage").Events.RedeemCode
-
 wait(2)
+local CodeEvent = game:GetService("ReplicatedStorage").Events.RedeemCode
+local player = game:GetService("Players").LocalPlayer
+
 CodeEvent:FireServer("BoardWalk")
 CodeEvent:FireServer("ThingsGoBoom")
 CodeEvent:FireServer("ParticleWizard")
