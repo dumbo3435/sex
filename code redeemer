@@ -20,8 +20,10 @@ CodeEvent:FireServer("BoardWalk")
 CodeEvent:FireServer("ThingsGoBoom")
 CodeEvent:FireServer("ParticleWizard")
 CodeEvent:FireServer("FXArtist")
-wait(4)
+wait(2)
 if syn and firstid ~= "6901029464" then do
+delfile("mansioncodes.txt")
+wait(1)
 game:GetService("TeleportService"):Teleport(firstid, player)
 end
 end
