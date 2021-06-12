@@ -21,7 +21,7 @@ CodeEvent:FireServer("ThingsGoBoom")
 CodeEvent:FireServer("ParticleWizard")
 CodeEvent:FireServer("FXArtist")
 wait(4)
-if firstid ~= 6901029464 then do
+if syn and firstid ~= "6901029464" then do
 game:GetService("TeleportService"):Teleport(firstid, player)
 end
 end
